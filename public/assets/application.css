@@ -1,0 +1,10 @@
+/* line 1, ../../app/assets/stylesheets/application.css.scss */
+html {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20pt;
+}
+
+/* line 6, ../../app/assets/stylesheets/application.css.scss */
+p {
+  font-family: 'Roboto', sans-serif;
+}
