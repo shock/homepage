@@ -1,0 +1,4 @@
+#!/bin/bash
+CWD=$(dirname $0)
+PUBLIC="$CWD/../public"
+rsync -avz --port=2222 $PUBLIC/ bdoughty@gator:./public_html
