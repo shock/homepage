@@ -15,6 +15,7 @@ $root_dir = File.dirname(__FILE__)
 
 def simple_growl(message, title = "Watcher")
   puts message
+  message = message.gsub(/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]/, "")
   image = $run_success ? "~/.watchr/images/success.jpg" : "~/.watchr/images/failure.gif"
   growlnotify = `which growlnotify`.chomp
   priority = $run_success ? -2 : 2
@@ -26,6 +27,7 @@ end
 def growl(title = "Watchr Test Results")
   image = $run_success ? "~/.watchr/images/success.jpg" : "~/.watchr/images/failure.gif"
   message = $run_success ? "SUCCESS! " * 21 : "FAILED! " * 16
+  message = message.gsub(/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]/, "")
   priority = $run_success ? -2 : 2
   sticky_option = !$run_success || title =~ /WHOLE SUITE RESULTS/ ? "-s" : ""
   growlnotify = `which growlnotify`.chomp
@@ -106,6 +108,7 @@ def compile_scss(matches)
   output_dir = "#{$root_dir}/public/assets"
   sass_dir = "#{$root_dir}/app/assets/stylesheets"
   cmd = "bundle exec compass compile #{in_file} -I #{sass_dir} --sass-dir #{sass_dir} --css-dir #{output_dir} --output-style expanded"
+  puts cmd
   # puts cmd
   status, stdout, stderr = systemu cmd
   $run_success = status == 0
@@ -121,6 +124,7 @@ def compile_scss(matches)
     simple_growl("#{in_file} compiled to #{out_file.gsub("#{$root_dir}/", '')}")
 
   else
+    simple_growl(stdout)
     simple_growl(stderr)
     systemu 'say "SCSS compile error"'
   end
