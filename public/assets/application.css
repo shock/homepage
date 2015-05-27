@@ -1,4 +1,4 @@
-/* line 25, ../../app/assets/stylesheets/application.css.scss */
+/* line 26, ../../app/assets/stylesheets/application.css.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -8,51 +8,51 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
 }
 
-/* line 34, ../../app/assets/stylesheets/application.css.scss */
+/* line 35, ../../app/assets/stylesheets/application.css.scss */
 html {
   line-height: 1;
   font-family: Roboto, sans-serif;
 }
 
-/* line 39, ../../app/assets/stylesheets/application.css.scss */
+/* line 40, ../../app/assets/stylesheets/application.css.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 43, ../../app/assets/stylesheets/application.css.scss */
+/* line 44, ../../app/assets/stylesheets/application.css.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 48, ../../app/assets/stylesheets/application.css.scss */
+/* line 49, ../../app/assets/stylesheets/application.css.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 54, ../../app/assets/stylesheets/application.css.scss */
+/* line 55, ../../app/assets/stylesheets/application.css.scss */
 q, blockquote {
   quotes: none;
 }
 
-/* line 58, ../../app/assets/stylesheets/application.css.scss */
+/* line 59, ../../app/assets/stylesheets/application.css.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: none;
 }
 
-/* line 62, ../../app/assets/stylesheets/application.css.scss */
+/* line 63, ../../app/assets/stylesheets/application.css.scss */
 a img {
   border: none;
 }
 
-/* line 66, ../../app/assets/stylesheets/application.css.scss */
+/* line 67, ../../app/assets/stylesheets/application.css.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
-/* line 70, ../../app/assets/stylesheets/application.css.scss */
+/* line 71, ../../app/assets/stylesheets/application.css.scss */
 a {
   transition-property: all;
   transition-duration: 0.125s;
@@ -61,52 +61,78 @@ a {
   border-bottom: 1px solid rgba(61, 153, 135, 0.15);
 }
 
-/* line 78, ../../app/assets/stylesheets/application.css.scss */
+/* line 79, ../../app/assets/stylesheets/application.css.scss */
 a:visited {
   color: #3d9987;
 }
 
-/* line 82, ../../app/assets/stylesheets/application.css.scss */
+/* line 83, ../../app/assets/stylesheets/application.css.scss */
 a:focus {
   color: #3d9987;
 }
 
-/* line 86, ../../app/assets/stylesheets/application.css.scss */
+/* line 87, ../../app/assets/stylesheets/application.css.scss */
 a:hover {
   color: #50b9a5;
 }
 
-/* line 90, ../../app/assets/stylesheets/application.css.scss */
+/* line 91, ../../app/assets/stylesheets/application.css.scss */
 a:active {
   color: #50b9a5;
 }
 
-/* line 94, ../../app/assets/stylesheets/application.css.scss */
+/* line 95, ../../app/assets/stylesheets/application.css.scss */
 a:hover, a:active {
   border-bottom: 1px solid rgba(61, 153, 135, 0);
 }
 
-/* line 98, ../../app/assets/stylesheets/application.css.scss */
+/* line 99, ../../app/assets/stylesheets/application.css.scss */
 strong {
-  font-weight: 600;
+  font-weight: 700;
 }
 
-/* line 102, ../../app/assets/stylesheets/application.css.scss */
+/* line 103, ../../app/assets/stylesheets/application.css.scss */
 body {
-  background-color: #FFFEFC;
+  -webkit-font-smoothing: antialiased;
+  background-color: #FFFEFE;
   color: #4d4d4d;
   font-family: freight-sans-pro, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
+}
+
+/* line 112, ../../app/assets/stylesheets/application.css.scss */
+div.container {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+/* line 119, ../../app/assets/stylesheets/application.css.scss */
+article {
+  position: relative;
+  height: auto;
+}
+/* line 122, ../../app/assets/stylesheets/application.css.scss */
+article .backdrop {
+  position: absolute;
+  box-sizing: border-box;
+  border-top: 6em solid transparent;
+  height: 100%;
+  background-repeat: no-repeat no-repeat;
+  background-size: auto 100%;
+  background-position: center center;
+  width: 100%;
+  opacity: 0.02;
 }
 
 @media (min-width: 1000px) {
-  /* line 111, ../../app/assets/stylesheets/application.css.scss */
+  /* line 151, ../../app/assets/stylesheets/application.css.scss */
   article {
     margin-right: 38.2%;
   }
 
-  /* line 115, ../../app/assets/stylesheets/application.css.scss */
+  /* line 155, ../../app/assets/stylesheets/application.css.scss */
   article p {
     font-size: 20px;
     line-height: 32px;
@@ -116,7 +142,7 @@ body {
     padding-right: 64px;
   }
 
-  /* line 124, ../../app/assets/stylesheets/application.css.scss */
+  /* line 164, ../../app/assets/stylesheets/application.css.scss */
   article p:first-of-type {
     font-size: 32px;
     line-height: 48px;
@@ -124,27 +150,27 @@ body {
     margin-bottom: 48px;
   }
 
-  /* line 131, ../../app/assets/stylesheets/application.css.scss */
+  /* line 171, ../../app/assets/stylesheets/application.css.scss */
   figure {
     height: 100%;
     max-width: 600px;
     width: 38.2%;
   }
 
-  /* line 137, ../../app/assets/stylesheets/application.css.scss */
+  /* line 177, ../../app/assets/stylesheets/application.css.scss */
   figcaption {
     box-shadow: rgba(0, 0, 0, 0.2) 1px 0 0 0 inset;
   }
 }
 @media (max-width: 1000px) {
-  /* line 144, ../../app/assets/stylesheets/application.css.scss */
+  /* line 184, ../../app/assets/stylesheets/application.css.scss */
   article {
     position: absolute;
     top: 38.2%;
     width: 100%;
   }
 
-  /* line 150, ../../app/assets/stylesheets/application.css.scss */
+  /* line 190, ../../app/assets/stylesheets/application.css.scss */
   article p {
     font-size: 16px;
     line-height: 24px;
@@ -154,7 +180,7 @@ body {
     padding-right: 24px;
   }
 
-  /* line 159, ../../app/assets/stylesheets/application.css.scss */
+  /* line 199, ../../app/assets/stylesheets/application.css.scss */
   article p:first-of-type {
     font-size: 24px;
     line-height: 32px;
@@ -162,35 +188,35 @@ body {
     margin-bottom: 32px;
   }
 
-  /* line 166, ../../app/assets/stylesheets/application.css.scss */
+  /* line 206, ../../app/assets/stylesheets/application.css.scss */
   figure {
     height: 38.2%;
     max-height: 600px;
     width: 100%;
   }
 
-  /* line 172, ../../app/assets/stylesheets/application.css.scss */
+  /* line 212, ../../app/assets/stylesheets/application.css.scss */
   figcaption {
     box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0 0 inset;
   }
 }
-/* line 178, ../../app/assets/stylesheets/application.css.scss */
+/* line 218, ../../app/assets/stylesheets/application.css.scss */
 article p:first-of-type {
   color: #1a1a1a;
   font-weight: 300;
 }
 
-/* line 183, ../../app/assets/stylesheets/application.css.scss */
+/* line 223, ../../app/assets/stylesheets/application.css.scss */
 figure {
   position: absolute;
   right: 0;
   top: 0;
 }
 
-/* line 189, ../../app/assets/stylesheets/application.css.scss */
+/* line 229, ../../app/assets/stylesheets/application.css.scss */
 figcaption {
   background-size: cover;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.4);
   height: 100%;
   line-height: 20px;
   position: relative;
@@ -198,48 +224,48 @@ figcaption {
   background-image: url(pano.jpg);
   background-position: left center;
   background-repeat: no-repeat;
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 300;
 }
 
-/* line 203, ../../app/assets/stylesheets/application.css.scss */
+/* line 243, ../../app/assets/stylesheets/application.css.scss */
 figcaption a {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   border: none;
 }
 
-/* line 209, ../../app/assets/stylesheets/application.css.scss */
+/* line 249, ../../app/assets/stylesheets/application.css.scss */
 figcaption a:visited {
   color: rgba(255, 255, 255, 0.8);
 }
 
-/* line 213, ../../app/assets/stylesheets/application.css.scss */
+/* line 253, ../../app/assets/stylesheets/application.css.scss */
 figcaption a:focus {
   color: rgba(255, 255, 255, 0.8);
 }
 
-/* line 217, ../../app/assets/stylesheets/application.css.scss */
+/* line 257, ../../app/assets/stylesheets/application.css.scss */
 figcaption a:hover {
   color: #fff;
 }
 
-/* line 221, ../../app/assets/stylesheets/application.css.scss */
+/* line 261, ../../app/assets/stylesheets/application.css.scss */
 figcaption a:active {
   color: #fff;
 }
 
-/* line 225, ../../app/assets/stylesheets/application.css.scss */
+/* line 265, ../../app/assets/stylesheets/application.css.scss */
 figcaption span {
   text-shadow: rgba(0, 0, 0, 0.2) 0 1px 1px;
   bottom: 0;
-  margin: 12px 16px;
+  margin: 6px;
   padding: 0 8px;
   position: absolute;
   right: 0;
 }
 
-/* line 234, ../../app/assets/stylesheets/application.css.scss */
+/* line 274, ../../app/assets/stylesheets/application.css.scss */
 p {
   font-family: Roboto, sans-serif;
 }
